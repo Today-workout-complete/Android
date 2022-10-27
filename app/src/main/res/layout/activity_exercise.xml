@@ -38,26 +38,30 @@
 
             <Button
                 android:id="@+id/exerciseButton1"
-                android:textSize="20sp"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="80sp"
-                android:textStyle="bold"
+                android:background="@drawable/push_up"
+                android:backgroundTint="#D5D3D3"
                 android:gravity="center"
-                android:text="어깨운동"
-                android:background="@drawable/exercise1" />
+                android:text="맨운동"
+                android:textColor="#93B5C6"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/exerciseButton2"
-                android:text="등 운동"
-                android:textSize="20sp"
+                android:text="운동중"
+                android:textSize="16sp"
+                android:textColor="#93B5C6"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginRight="20px"
+                android:backgroundTint="#D5D3D3"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:background="@drawable/exercise2" />
+                android:background="@drawable/arm" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,24 +72,26 @@
 
             <Button
                 android:id="@+id/exerciseButton3"
+                android:textSize="16sp"
                 android:layout_width="120dp"
+                android:textColor="#93B5C6"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="80sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:text="가슴운동"
-                android:background="@drawable/exercise3"/>
+                android:text="준비중"/>
 
             <Button
                 android:id="@+id/exerciseButton4"
+                android:textSize="16sp"
+                android:textColor="#93B5C6"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginRight="20px"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="팔운동"
-                android:background="@drawable/exercise4"/>
+                android:text="준비중"/>
         </LinearLayout>
 
         <LinearLayout
@@ -96,26 +102,26 @@
 
             <Button
                 android:id="@+id/exerciseButton5"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#93B5C6"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="80sp"
                 android:gravity="center"
-                android:text="하체운동"
-                android:background="@drawable/exercise6" />
+                android:text="준비중"/>
 
             <Button
                 android:id="@+id/exerciseButton6"
-                android:text="유산소 운동"
+                android:text="준비중"
+                android:textColor="#93B5C6"
                 android:textStyle="bold"
-                android:textSize="20sp"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:textSize="16dp"
                 android:layout_marginRight="20px"
-                android:gravity="center"
-                android:background="@drawable/exercise7" />
+                android:gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
@@ -128,22 +134,24 @@
                 android:id="@+id/exerciseButton7"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:textColor="#93B5C6"
                 android:layout_gravity="center"
                 android:layout_marginRight="80sp"
                 android:gravity="center"
-                android:text="맨몸운동"
-                android:textStyle="bold"
-                android:background="@drawable/exercise5" />
+                android:textSize="16dp"
+                android:text="준비중"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/exerciseButton8"
                 android:layout_width="120dp"
                 android:textStyle="bold"
                 android:layout_height="120dp"
+                android:textColor="#93B5C6"
                 android:layout_marginRight="20px"
+                android:textSize="16dp"
                 android:gravity="center"
-                android:text="기타"
-                android:background="@drawable/exercise8"/>
+                android:text="준비중"/>
         </LinearLayout>
     </LinearLayout>
 

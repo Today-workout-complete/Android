@@ -18,20 +18,37 @@
             android:id="@+id/workoutTrackerBackButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:textStyle="bold"
+            android:layout_weight="1"
             android:onClick="onClickBackButton"
-            android:text="Back" />
+            android:text="뒤로 가기"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/workoutTrackerTextView"
+            android:id="@+id/exciseNameTextView"
             android:layout_width="match_parent"
-            android:textStyle="bold"
             android:layout_height="match_parent"
-            android:textSize="16dp"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Workout Tracker" />
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/likedEmgDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickLikedEmgDataButton"
+            android:text="찜 목록"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/myEmgDataListButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickMyEmgDataListButton"
+            android:text="나의 데이터"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -76,10 +93,9 @@
             android:id="@+id/workoutTrackerWeightTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="weight" />
+            android:gravity="center"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/workoutTrackerRepsTextView"
@@ -101,7 +117,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="0.95"
         android:orientation="horizontal">
 
         <Button
@@ -113,21 +129,13 @@
             android:text="연결" />
 
         <TextView
-            android:id="@+id/bluetoothTextView"
+            android:id="@+id/workoutTrackerBreakTimeTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textStyle="bold"
+            android:layout_weight="1"
             android:gravity="center"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-        <EditText
-            android:id="@+id/workoutTrackerEditTextNumber"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/readyStartButton"

@@ -40,20 +40,18 @@ public class BLEController {
     private UUID SERIVCE_UUID;
     private UUID SERIVCE_NOTY_UUID;
 
-    private TextView logView;
     private Button bluetoothConnectionButton;
     private Button readyStartButton;
 
-    private BLEController(Context ctx, TextView logView, Button bluetoothConnectionButton, Button readyStartButton) {
+    private BLEController(Context ctx, Button bluetoothConnectionButton, Button readyStartButton) {
         this.bluetoothManager = (BluetoothManager) ctx.getSystemService(Context.BLUETOOTH_SERVICE);
-        this.logView = logView;
         this.bluetoothConnectionButton = bluetoothConnectionButton;
         this.readyStartButton = readyStartButton;
     }
 
-    public static BLEController getInstance(Context ctx, TextView logView, Button bluetoothConnectionButton, Button readyStartButton) {
+    public static BLEController getInstance(Context ctx, Button bluetoothConnectionButton, Button readyStartButton) {
         if(null == instance)
-            instance = new BLEController((ctx), logView, bluetoothConnectionButton, readyStartButton);
+            instance = new BLEController((ctx), bluetoothConnectionButton, readyStartButton);
 
         return instance;
     }
@@ -206,7 +204,6 @@ public class BLEController {
                     } else if(!value.startsWith("A")) {
                         WorkoutTrackerActivity.queue.add(Float.parseFloat(value));
                     }
-                    logView.setText(logView.getText() + "\n" + value);
                 }
             });
         }
@@ -235,7 +232,6 @@ public class BLEController {
     public void sendData(String data) {
         btGattChar.setValue(data);
         Log.i("[BLE]", "sendData: " + data );
-        logView.setText(logView.getText() + "\n" + data);
         bluetoothGatt.writeCharacteristic(btGattChar);
     }
 

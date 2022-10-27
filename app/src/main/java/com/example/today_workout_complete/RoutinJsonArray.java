@@ -45,6 +45,15 @@ public class RoutinJsonArray {
         return null;
     }
 
+    public int getBreakTime(int routinIndex, int exerciseIndex){
+        try {
+            return routinArray.getJSONObject(routinIndex).getJSONArray("exercises").getJSONObject(exerciseIndex).getInt("breakTime");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return 60;
+    }
+
     public JSONObject getExercise(int routinIndex, int exerciseIndex){
         try {
             return routinArray.getJSONObject(routinIndex).getJSONArray("exercises").getJSONObject(exerciseIndex);
